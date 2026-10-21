@@ -6,7 +6,7 @@ import { google } from "googleapis";
 import { JWT } from "google-auth-library";
 import dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: [".env.local", ".env"] });
 
 const app = express();
 app.use(express.json());
